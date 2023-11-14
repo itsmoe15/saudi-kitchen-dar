@@ -23,8 +23,30 @@
     
     
     
-    
-    
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var whatsappButton = document.createElement("div");
+        whatsappButton.id = "whatsapp-button";
+        whatsappButton.innerHTML = "تواصل معنا";
+        whatsappButton.style.position = "fixed";
+        whatsappButton.style.bottom = "30px"; /* Adjusted to be a bit higher for better visibility */
+        whatsappButton.style.right = "30px"; /* Adjusted to be a bit further from the right edge */
+        whatsappButton.style.backgroundColor = "#25d366"; /* WhatsApp green color */
+        whatsappButton.style.color = "#fff";
+        whatsappButton.style.padding = "12px 24px"; /* Slightly larger padding for better visibility */
+        whatsappButton.style.borderRadius = "8px"; /* Rounded corners for a softer look */
+        whatsappButton.style.cursor = "pointer";
+        whatsappButton.style.fontFamily = "'Noto Naskh Arabic', sans-serif"; /* Set Arabic font */
+  
+        whatsappButton.addEventListener("click", function () {
+          window.location.href = "https://wa.me/966502195001";
+        });
+  
+        document.body.appendChild(whatsappButton);
+      });
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400&display=swap" rel="stylesheet">
+  
     
     
     
